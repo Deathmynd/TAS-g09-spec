@@ -1,0 +1,12 @@
+/*
+@author Saboteur
+@date Wed Nov 16 15:48:09 MSK 2016
+*/
+
+
+@@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtQuestion
+@description "The Class DtQuestion, which holds a datatype of the Question to human."
+@operation
+icrash.concepts.primarytypes.datatypes.dtQuestion.is
+""
+@endOperations

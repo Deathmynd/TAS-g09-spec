@@ -1,0 +1,15 @@
+/*
+@author Saboteur
+@date Wed Nov 16 15:48:55 MSK 2016
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.datatypes.dtQuestion.is
+@description "it is used to check that a question not really long"
+//postFunctional descriptions
+@postF 
+"is true of the length of the string value is at least 255 characters long."
+@endPostF
+//example
+@example" "

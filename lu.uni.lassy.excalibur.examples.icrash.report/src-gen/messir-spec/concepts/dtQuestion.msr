@@ -1,0 +1,32 @@
+/*
+* @author Saboteur
+* @date Wed Nov 16 16:25:53 MSK 2016
+*/
+
+package icrash.operations.concepts.primarytypes.datatypes.dtQuestion.msr {
+
+import lu.uni.lassy.messir.libraries.primitives
+
+
+	Operation Model {
+				operation: icrash.concepts.primarytypes.datatypes.dtQuestion.is():ptBoolean{
+    postF{ 
+        let TheResult: ptBoolean in
+        let MaxLength: ptInteger in
+        ( if
+          ( MaxLength = 255
+            and AdtValue.value.length().leq(MinLength)
+          )
+          then (TheResult = true)
+          else (TheResult = false)
+          endif
+          result = TheResult
+        )
+}
+		prolog{"src/Operations/Concepts/PrimaryTypesDatatypes/PrimaryTypesDatatypes-dtQuestion-is.pl"}
+	}
+
+	}
+
+
+}
