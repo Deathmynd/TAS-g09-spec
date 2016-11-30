@@ -39,7 +39,7 @@ The \msrcode{is} operation has the following properties:
 	        let MaxLength: ptInteger in
 	        ( if
 	          ( MaxLength = 255
-	            and AdtValue.value.length().leq(MinLength)
+	            and AdtValue.value.length() <= (ManLength)
 	          )
 	          then (TheResult = true)
 	          else (TheResult = false)

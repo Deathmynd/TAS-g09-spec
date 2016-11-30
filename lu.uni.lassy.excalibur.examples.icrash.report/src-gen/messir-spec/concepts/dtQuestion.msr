@@ -15,7 +15,7 @@ import lu.uni.lassy.messir.libraries.primitives
         let MaxLength: ptInteger in
         ( if
           ( MaxLength = 255
-            and AdtValue.value.length().leq(MinLength)
+            and AdtValue.value.length() <= (ManLength)
           )
           then (TheResult = true)
           else (TheResult = false)
@@ -23,7 +23,7 @@ import lu.uni.lassy.messir.libraries.primitives
           result = TheResult
         )
 }
-		prolog{"src/Operations/Concepts/PrimaryTypesDatatypes/PrimaryTypesDatatypes-dtQuestion-is.pl"}
+		
 	}
 
 	}

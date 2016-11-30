@@ -462,6 +462,8 @@
   <semanticResources>concepts/documentation/PrimaryType-Datatype-dtQuestion.msrd</semanticResources>
   <semanticResources>concepts/documentation/Operation-dtQuestion-is.msrd</semanticResources>
   <semanticResources>concepts/dtQuestion.msr</semanticResources>
+  <semanticResources>concepts/documentation/Operation-dtQuestion-putAnswer.msrd</semanticResources>
+  <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtQuestion-putAnswer.msr</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_X0EtsPWqEeSOM9Kfym77Zg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

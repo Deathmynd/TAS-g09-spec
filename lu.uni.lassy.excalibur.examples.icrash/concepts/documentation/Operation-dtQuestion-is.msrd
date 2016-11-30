@@ -11,5 +11,3 @@ icrash.concepts.primarytypes.datatypes.dtQuestion.is
 @postF 
 "is true of the length of the string value is at least 255 characters long."
 @endPostF
-//example
-@example" "

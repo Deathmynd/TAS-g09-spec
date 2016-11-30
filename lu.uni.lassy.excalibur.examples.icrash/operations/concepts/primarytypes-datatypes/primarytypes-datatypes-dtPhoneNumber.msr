@@ -18,7 +18,6 @@ Operation Model {
       result = TheResult
     )
 }
-		prolog{"src/Operations/Concepts/PrimaryTypesDatatypes/PrimaryTypesDatatypes-dtPhoneNumber-is.pl"}
 	}
 }
 }

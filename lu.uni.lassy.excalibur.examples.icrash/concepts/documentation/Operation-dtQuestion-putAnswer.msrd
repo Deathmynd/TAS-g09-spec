@@ -1,0 +1,21 @@
+/*
+@author Saboteur
+@date Tue Nov 29 23:20:27 MSK 2016
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.datatypes.dtQuestion.putAnswer
+//parameters
+@parameter
+icrash.concepts.primarytypes.datatypes.dtQuestion.putAnswer.key
+"It is a number of answer of human wich hi send in sms"
+@parameter icrash.operations.concepts.primarytypes.datatypes.dtQuestion.msr.operationmodel.icrash.concepts.primarytypes.datatypes.dtQuestion.putAnswer.key
+" "
+@endParameters
+
+@description "it is used to add one voice in reply with number key"
+//postFunctional descriptions
+@postF 
+"true if answer is added"
+@endPostF

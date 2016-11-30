@@ -9,24 +9,45 @@ import lu.uni.lassy.messir.libraries.primitives
 
 
 	Operation Model {
-				operation: icrash.concepts.primarytypes.datatypes.dtQuestion.is():ptBoolean{
-    postF{ 
-        let TheResult: ptBoolean in
-        let MaxLength: ptInteger in
-        ( if
-          ( MaxLength = 255
-            and AdtValue.value.length() <= (ManLength)
-          )
-          then (TheResult = true)
-          else (TheResult = false)
-          endif
-          result = TheResult
-        )
-}
-		
+		operation: icrash.concepts.primarytypes.datatypes.dtQuestion.is():ptBoolean{
+		    postF{ 
+		        let TheResult: ptBoolean in
+		        let MaxLength: ptInteger in
+		        ( if
+		          ( MaxLength = 255
+		            and AdtValue.value.length() <= (ManLength)
+		          )
+		          then (TheResult = true)
+		          else (TheResult = false)
+		          endif
+		          result = TheResult
+		        )
+			}
+				
+		}
+	
+		operation: icrash.concepts.primarytypes.datatypes.dtQuestion.putAnswer(key:ptInteger):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+		postF{
+		    let TheResult: ptBoolean in
+			let key: ptInteger in
+			let minAnswerValue: ptInteger in
+			let maxAnswerValue: ptInteger in
+			(
+				if 
+				(
+					minAnswerValue <= key
+					and maxAnswerVale >= key
+					and answerStatistic.inc == true
+				)
+				then (TheResult = true)
+		        else (TheResult = false)
+		        endif
+		        result = TheResult
+			)
+			
+		}		
+
+		}
 	}
-
-	}
-
-
 }
