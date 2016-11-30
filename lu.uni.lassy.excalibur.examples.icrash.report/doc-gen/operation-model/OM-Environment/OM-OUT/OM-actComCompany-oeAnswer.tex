@@ -1,0 +1,78 @@
+\subsection{Operation Model for oeAnswer}
+
+\label{OM-oeAnswer}
+
+
+The \msrcode{oeAnswer} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeAnswer}{
+	 }
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtPhoneNumber: dtPhoneNumber}{} 
+	\addnumbereddoublerow{}{AdtComment: dtComment}{} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{ }
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{ }
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{ }
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	% ------------------------------------------
+	% MCL Listing
+	% ------------------------------------------
+	\vspace{1cm}
+	The listing~\ref{OM-actComCompany-oeAnswer-MCL-LST} provides the \msrmessir (MCL-oriented) specification of the operation.
+	
+	\scriptsize
+	\vspace{0.5cm}
+	\begin{lstlisting}[style=MessirStyle,firstnumber=auto,captionpos=b,caption={\msrmessir (MCL-oriented) specification of the operation \emph{oeAnswer}.},label=OM-actComCompany-oeAnswer-MCL-LST]
+
+	
+	/* Pre Functional:*/
+	preF{}
+	
+	/* Post Functional:*/ 
+	postF{let TheResult: ptBoolean in
+			let key: ptInteger in
+			let minAnswerValue: ptInteger in
+			let maxAnswerValue: ptInteger in
+			(
+				if 
+				(
+					minAnswerValue <= key
+					and maxAnswerVale >= key
+					and answerStatistic.inc == true
+				)
+				then (TheResult = true)
+		        else (TheResult = false)
+		        endif
+		        result = TheResult
+			)}
+	
+	
+	\end{lstlisting}
+	\normalsize 
+	
+	
+	
+	
+
+
+
+
+

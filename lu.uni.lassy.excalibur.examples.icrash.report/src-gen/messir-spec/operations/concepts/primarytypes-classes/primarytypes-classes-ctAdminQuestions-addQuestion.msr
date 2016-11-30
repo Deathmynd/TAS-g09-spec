@@ -1,0 +1,48 @@
+package icrash.concepts.primarytypes.classes.operations.classes.ctAdminQuestions.addQuestion {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+import icrash.concepts.primarytypes.datatypes
+
+import icrash.concepts.primarytypes.classes
+
+	Operation Model {
+
+		operation: icrash.concepts.primarytypes.classes.ctAdminQuestions.addQuestion(question:dtQuestion):ptInteger{
+postF{
+if
+(
+/* Post F01 */
+let Self:ctAdminQuestions in
+Self.administratorQuestions = Aquestions
+
+and (Aquestions.put(question) = true)
+)
+then (result = true)
+else (result = false)
+endif
+}
+}
+
+operation: 
+	icrash.concepts.primarytypes.classes.ctAdminQuestions.init(administratorQuestions:dtQuestion):ptBoolean{
+	postF{
+	if
+	(
+	/* Post F01 */
+	let Self:ctAdminQuestions in
+	Self.administratorQuestions = Aquestions
+	
+	and (Aquestions.put(question) = true)
+	)
+	then (result = true)
+	else (result = false)
+	endif
+	}
+ }
+
+
+	}
+}

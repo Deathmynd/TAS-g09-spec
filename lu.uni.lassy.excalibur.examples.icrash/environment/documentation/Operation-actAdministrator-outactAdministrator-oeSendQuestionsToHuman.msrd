@@ -1,0 +1,34 @@
+/*
+@author Saboteur
+@date Wed Nov 30 15:33:44 MSK 2016
+*/
+
+
+@@Operation
+icrash.environment.actAdministrator.outactAdministrator.oeSendQuestionsToHuman
+//parameters
+@parameter
+icrash.environment.actAdministrator.outactAdministrator.oeSendQuestionsToHuman.AdtTableQuestions
+"List of questions"
+@endParameters
+
+@description " Admin send questions to ComCompany
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

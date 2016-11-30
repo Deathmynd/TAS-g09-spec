@@ -1,0 +1,22 @@
+/*
+@author Saboteur
+@date Wed Nov 30 13:33:08 MSK 2016
+*/
+
+
+@@Primary Type Class icrash.concepts.primarytypes.classes.ctAdminQuestions
+@description "Save questions by admin"
+@attribute
+icrash.concepts.primarytypes.classes.ctAdminQuestions.key
+"Size of questions"
+@attribute
+icrash.concepts.primarytypes.classes.ctAdminQuestions.administratorQuestions
+"Table of questions"
+@endAttributes
+@operation
+icrash.concepts.primarytypes.classes.ctAdminQuestions.init
+"init questions"
+@operation
+icrash.concepts.primarytypes.classes.ctAdminQuestions.addQuestion
+"add question"
+@endOperations

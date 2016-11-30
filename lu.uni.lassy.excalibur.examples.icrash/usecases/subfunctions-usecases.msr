@@ -21,6 +21,10 @@ import icrash.environment
     }
   }
 //----------------------------------------------------
+  use case system subfunction oeSendQuestionsToHuman(AdtTableQuestions:ctAdminQuestions){
+    actor actAdministrator[primary,active]
+  }
+//----------------------------------------------------
   use case system subfunction oeAlert(
                                    AetKind:etHumanKind,
                                    AdtMyDate:dtDate,

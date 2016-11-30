@@ -131,5 +131,32 @@ postP{true}
 
 prolog{"src/Operations/Environment/OUT/outactComCompany-oeAlert.pl"}
 }
+
+operation: actComCompany.outactComCompany.oeAnswer(
+ AdtPhoneNumber:dtPhoneNumber,
+ AdtComment:dtComment
+):ptBoolean{
+	preF{ 
+	
+}
+	postF{
+	    let TheResult: ptBoolean in
+		let key: ptInteger in
+		let minAnswerValue: ptInteger in
+		let maxAnswerValue: ptInteger in
+		(
+			if 
+			(
+				minAnswerValue <= key
+				and maxAnswerVale >= key
+				and answerStatistic.inc == true
+			)
+			then (TheResult = true)
+	        else (TheResult = false)
+	        endif
+	        result = TheResult
+		)
+	}
+}
 }
 }

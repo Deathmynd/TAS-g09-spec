@@ -1,0 +1,26 @@
+/*
+@author Saboteur
+@date Wed Nov 30 20:24:51 MSK 2016
+*/
+
+
+@@Use Case Subfunction icrash.usecases.subfunctions.oeSendQuestionsToHuman
+@description "Send questions to humans"
+@parameter icrash.usecases.subfunctions.oeSendQuestionsToHuman.AdtTableQuestions ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

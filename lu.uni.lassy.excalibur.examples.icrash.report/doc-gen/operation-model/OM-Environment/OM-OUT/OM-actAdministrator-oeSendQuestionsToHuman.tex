@@ -1,0 +1,78 @@
+\subsection{Operation Model for oeSendQuestionsToHuman}
+
+\label{OM-oeSendQuestionsToHuman}
+
+
+The \msrcode{oeSendQuestionsToHuman} operation has the following properties:
+
+	\begin{operationmodel}
+	\addheading{Operation}
+	\adddoublerow{oeSendQuestionsToHuman}{ Admin send questions to ComCompany
+	 }
+
+	\addrowheading{Parameters}
+	\addnumbereddoublerow{}{AdtTableQuestions: ctAdminQuestions}{List of questions} 
+
+	\addrowheading{Return type}
+	\addsinglerow{ptBoolean}
+
+	\addrowheading{Pre-Condition (protocol)}
+	\addnumberedsinglerow{PreP}{ }
+		
+	\addrowheading{Pre-Condition (functional)}
+	\addnumberedsinglerow{PreF}{ }
+
+	\addrowheading{Post-Condition (functional)}
+	\addnumberedsinglerow{PostF}{ }
+
+	\addrowheading{Post-Condition (protocol)}
+	\addnumberedsinglerow{PostP}{ }
+	\end{operationmodel}
+
+
+
+	% ------------------------------------------
+	% MCL Listing
+	% ------------------------------------------
+	\vspace{1cm}
+	The listing~\ref{OM-actAdministrator-oeSendQuestionsToHuman-MCL-LST} provides the \msrmessir (MCL-oriented) specification of the operation.
+	
+	\scriptsize
+	\vspace{0.5cm}
+	\begin{lstlisting}[style=MessirStyle,firstnumber=auto,captionpos=b,caption={\msrmessir (MCL-oriented) specification of the operation \emph{oeSendQuestionsToHuman}.},label=OM-actAdministrator-oeSendQuestionsToHuman-MCL-LST]
+
+	/* Pre Protocol:*/ 
+	preP{let TheSystem: ctState in
+		  let TheActor:actAdministrator in
+		  
+		  self.rnActor.rnSystem = TheSystem
+		  and self.rnActor = TheActor
+		  
+		/* PreP01 */
+		  and TheSystem.vpStarted = true
+		/* PreP02 */
+		  and TheActor.rnctAuthenticated.vpIsLogged = true}
+	
+	
+	/* Post Functional:*/ 
+	postF{let TheSystem: ctState in
+		  let TheactComCompany:actComCompany in
+		  self.rnActor.rnSystem = TheSystem
+		  and self.rnActor = TheActor
+		/* PostF01 */
+		  TheactactComCompany.rnInterfaceIN.ieSmsSend()}
+	
+	/* Post Protocol:*/ 
+	postP{ true}
+	
+	\end{lstlisting}
+	\normalsize 
+	
+	
+	
+	
+
+
+
+
+

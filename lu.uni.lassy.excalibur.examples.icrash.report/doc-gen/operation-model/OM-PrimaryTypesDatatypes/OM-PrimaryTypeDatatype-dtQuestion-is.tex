@@ -36,16 +36,16 @@ The \msrcode{is} operation has the following properties:
 	
 	/* Post Functional:*/ 
 	postF{let TheResult: ptBoolean in
-	        let MaxLength: ptInteger in
-	        ( if
-	          ( MaxLength = 255
-	            and AdtValue.value.length() <= (ManLength)
-	          )
-	          then (TheResult = true)
-	          else (TheResult = false)
-	          endif
-	          result = TheResult
-	        )}
+			        let MaxLength: ptInteger in
+			        ( if
+			          ( MaxLength = 255
+			            and AdtValue.value.length() <= (ManLength)
+			          )
+			          then (TheResult = true)
+			          else (TheResult = false)
+			          endif
+			          result = TheResult
+			        )}
 	
 	
 	\end{lstlisting}

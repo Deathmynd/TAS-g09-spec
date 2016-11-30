@@ -44,6 +44,15 @@ import lu.uni.lassy.messir.libraries.calendar
 			 
 			}
 			
+			class ctAdminQuestions role rnctAdminQuestions cardinality [1..1]{
+				attribute key:dtInteger
+				attribute administratorQuestions: dtQuestion
+				
+				operation init(administratorQuestions:dtQuestion):ptBoolean
+				operation addQuestion(question: dtQuestion):ptInteger
+			 
+			}
+			
 			class ctCrisis role rnctCrisis cardinality [0..*]{
 				attribute id:dtCrisisID
 				attribute type:etCrisisType
@@ -114,6 +123,8 @@ import lu.uni.lassy.messir.libraries.calendar
 										Alogin:dtLogin ,
 										Apwd:dtPassword ):ptBoolean
 			}
+			
+			
 		}
 	}
 }

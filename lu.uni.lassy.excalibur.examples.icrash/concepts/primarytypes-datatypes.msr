@@ -45,8 +45,7 @@ import lu.uni.lassy.messir.libraries.calendar
 			datatype dtQuestion {
 				operation is() : ptBoolean
 				operation putAnswer(key: ptInteger) : ptBoolean
-			}
-			
+			}			
 			
 			enum etCrisisStatus {
 				constants["pending", "handled", "solved","closed"]

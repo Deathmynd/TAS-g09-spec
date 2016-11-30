@@ -1,0 +1,20 @@
+/*
+@author Saboteur
+@date Wed Nov 30 13:34:46 MSK 2016
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.classes.ctAdminQuestions.addQuestion
+//parameters
+@parameter
+icrash.concepts.primarytypes.classes.ctAdminQuestions.addQuestion.question
+"New Question"
+@endParameters
+
+@description "Add new questions
+ "
+//postFunctional descriptions
+@postF 
+"return key - size of questions "
+@endPostF
